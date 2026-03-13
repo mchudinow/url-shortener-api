@@ -1,5 +1,6 @@
+# ── application ─────────────────────────────────────────────────────────────
 fastapi
-uvicorn
+uvicorn[standard]
 sqlalchemy
 psycopg2-binary
 pydantic
@@ -7,3 +8,12 @@ redis
 python-jose
 passlib[bcrypt]
 python-multipart
+
+# ── testing ──────────────────────────────────────────────────────────────────
+pytest
+pytest-cov
+httpx
+pytest-mock
+
+# ── load testing ─────────────────────────────────────────────────────────────
+locust
